@@ -135,13 +135,14 @@ ul a:hover {
 }
 
 .featured .image {
-  width: 100%;
-  height: 500px;
+  width: 99%;
+  height: 70%;
+  max-height: 400px;
+  max-width: 1200px;
   background-image: url(images/iphone-15-pro_overview__f8jz7aagka2q_og.png);
   background-position: center;
   background-size: cover;
   z-index: 2;
-  padding-bottom: 300px;
 }
 
 .featured .text ul {
@@ -244,12 +245,16 @@ ul a:hover {
 }
 
 #mackbook-pro .image {
-  width: 100%;
+  max-width: 1000px;
+  margin: auto;
   height: 400px;
   background-image: url(images/promo_mbp__ek7p477bkp6q_large_2x.png);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   z-index: 2;
+  filter: drop-shadow(grey 0.5rem 0.5rem 10px);
+  
 }
 
 #iphony {
@@ -257,16 +262,15 @@ ul a:hover {
 }
 
 #iphony .image {
+  max-height: 350px;
   height: 400px;
-  background-image: url(images/6596b727648eb98a0bee3163_iphone_15_pro_main.png);
-  background-size: cover;
-  background-position: top;
+  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
+  background-image: url(images/6596b727648eb98a0bee3163_iphone_15_pro_main.png);
+  filter: drop-shadow(grey 1rem 1rem 10px);
   z-index: 2;
-  margin-top: 10%;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-bottom: 0;
+  margin-top: 50px;
 }
 
 #meet-the-team {
@@ -290,7 +294,6 @@ ul a:hover {
 
 #meet-the-team a {
   text-decoration: none;
-  color: rgb(41, 151, 255);
 }
 
 #meet-the-team a:visited {
@@ -305,32 +308,21 @@ ul a:hover {
   align-content: flex-end;
   height: 60%;
   margin-top: 40px;
+  max-height: 500px;
 }
 
 #meet-the-team div {
-  width: 40%;
-  height: 60%;
+  width: 50%;
+  height: 50%;
+  max-height: 250px;
 }
 
 #steve img, #tim img, #eddie img {
   height: auto;
   width: 55%;
+  max-width: 250px;
   border-radius: 50%;
   border: 1.5px solid rgba(240, 240, 240, 0.8);
-}
-
-#steve {
-  justify-self: flex-start;
-}
-
-#tim {
-  justify-self: flex-start;
-  align-self: flex-end;
-}
-
-#eddie {
-  align-self: flex-end;
-  justify-self: flex-end;
 }
 
 
