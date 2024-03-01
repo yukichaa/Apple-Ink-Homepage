@@ -290,6 +290,7 @@ ul a:hover {
 
 #meet-the-team a {
   text-decoration: none;
+  color: rgb(41, 151, 255);
 }
 
 #meet-the-team a:visited {
