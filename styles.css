@@ -1,0 +1,366 @@
+@font-face {
+  font-family: "SF Pro Display";
+  src: url(fonts/SF-Pro-Display-Bold.otf) format('OpenType');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url(fonts/SF-Pro-Display-Regular.otf) format('OpenType');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url(fonts/SF-Pro-Display-Semibold.otf) format('OpenType');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(fonts/SF-Pro-Text-Light.otf) format('OpenType');
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  font-size: 16px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SF Pro Text", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+
+
+h1 { /* BOLD COPY */
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 500;
+  font-size: 3.5rem;
+}
+
+h2 { /* HEADINGS */
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+h3 { /* HEADING SUBTITLE */
+  font-family: "SF Pro Text", sans-serif;
+  font-weight: 400;
+  font-size: 1.15rem;
+}
+
+h4 { /* BOLD COPY SUBTITLE */
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 400;
+  font-size: 1.75rem;
+}
+
+/* HEADER STYLES */
+
+header {
+  margin: none;
+  height: 44px;
+  background-color: rgba(22, 22, 23, 0.9);
+  font-family: "SF Pro Text";
+  font-size: 0.75rem;
+  padding-bottom: 10px;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  top: 0px;
+}
+
+ul img {
+  height: 27px;
+}
+
+ul {
+  display: inline-flex;
+  justify-content: space-around;
+  width: 100%;
+  list-style-type: none;
+  align-items: center;
+  padding: 0px;
+}
+
+ul a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.4s ease;
+}
+
+ul a:hover {
+  color: rgba(200, 200, 200, 0.8);
+}
+
+/* BODY STYLES */
+
+.featured {
+  height: 700px;
+  color: rgba(245, 245, 247);
+  background-color: black;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.featured .text {
+  padding-top: 100px;
+  height: 400px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0px;
+  
+}
+
+.featured .text h1,
+.featured .text h4 {
+  margin: 4px;
+}
+
+.featured .image {
+  width: 100%;
+  height: 500px;
+  background-image: url(images/iphone-15-pro_overview__f8jz7aagka2q_og.png);
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+  padding-bottom: 300px;
+}
+
+.featured .text ul {
+  width: 26%;
+  margin: 1.0rem;
+  font-size: 1.15rem;
+  flex-wrap: wrap;
+  line-height: 1.6;
+  
+}
+
+.featured .text li  {
+  text-align: center;
+}
+
+.featured .text ul :first-child {
+  padding-right: 5px;
+}
+
+.featured .text ul a {
+  color: rgb(41, 151, 255);
+  cursor: pointer;
+  
+}
+
+.featured .text ul a:hover {
+  text-decoration: underline;
+
+}
+
+/* PRODUCT GRID STYLES */
+
+.product-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.75rem;
+  align-content: space-around;
+  justify-content: space-around;
+  padding: 0.75rem;
+  height: 1200px;
+}
+
+#ipaid h2, #meet-the-team h2,
+#ipaid h3, #meet-the-team h3 {
+  color: rgb(240, 240, 240);
+}
+
+.product-grid h2 {
+  margin-bottom: 0px;
+}
+
+.product-grid h3 {
+  margin-top: 5px;
+}
+
+.product-grid ul {
+  width: 45%;
+  margin: 0;
+  font-size: 1rem;
+  flex-wrap: wrap;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.product-grid .text ul a {
+  color: rgb(41, 151, 255);
+  cursor: pointer;
+}
+
+
+
+.product-grid .text ul a:hover {
+  text-decoration: underline;
+
+}
+
+.product-grid .text ul :first-child {
+  margin-right: 10px;
+}
+
+
+#ipaid {
+  background-color: black;
+}
+
+#ipaid .image {
+  max-height: 400px;
+  height: 500px;
+  background-image: url(images/ipad-segment-ipad-pro-202210.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2;
+  padding-bottom: 0;
+}
+
+#mackbook-pro {
+  background-color: rgb(240, 240, 240);
+}
+
+#mackbook-pro .image {
+  width: 100%;
+  height: 400px;
+  background-image: url(images/promo_mbp__ek7p477bkp6q_large_2x.png);
+  background-position: center;
+  background-size: cover;
+  z-index: 2;
+}
+
+#iphony {
+  background-color: rgb(240, 240, 240);
+}
+
+#iphony .image {
+  height: 400px;
+  background-image: url(images/6596b727648eb98a0bee3163_iphone_15_pro_main.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  z-index: 2;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 0;
+}
+
+#meet-the-team {
+  background-color: black;
+}
+
+#meet-the-team p {
+  color: rgb(41, 151, 255);
+  cursor: pointer;
+  margin: 0 0;
+  margin-bottom: 1rem;
+}
+
+#meet-the-team h3 {
+  margin-bottom: 0.4rem;
+}
+
+#meet-the-team p:hover {
+  text-decoration: underline;
+}
+
+#meet-the-team a {
+  text-decoration: none;
+}
+
+#meet-the-team a:visited {
+  color: rgb(41, 151, 255);
+}
+
+#meet-the-team .team {
+  margin: 0 auto;
+  display: inline-flex;
+  flex-flow: wrap-reverse;
+  justify-content: space-around;
+  align-content: flex-end;
+  height: 60%;
+  margin-top: 40px;
+}
+
+#meet-the-team div {
+  width: 40%;
+  height: 60%;
+}
+
+#steve img, #tim img, #eddie img {
+  height: auto;
+  width: 55%;
+  border-radius: 50%;
+  border: 1.5px solid rgba(240, 240, 240, 0.8);
+}
+
+#steve {
+  justify-self: flex-start;
+}
+
+#tim {
+  justify-self: flex-start;
+  align-self: flex-end;
+}
+
+#eddie {
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+
+@media (max-width: 800px) {
+  .product-grid {
+    grid-template: repeat(4, 1fr) / 1fr;
+    height: 100%;
+  }
+
+  #mackbook-pro {
+    grid-row: 1 / span 1;
+  }
+
+  #ipaid {
+    grid-row: 2 / span 1;
+  }
+  
+}
+
+/* FOOTER STYLES */
+footer {
+  width: 100%;
+  margin: 0px auto;
+  height: 3rem;
+  padding: auto;
+  display: flex;
+  position: relative;
+
+  font-size: 0.75rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.56);
+}
