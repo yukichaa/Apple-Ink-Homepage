@@ -113,7 +113,6 @@ ul a:hover {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  
 }
 
 .featured .text {
@@ -126,7 +125,6 @@ ul a:hover {
   align-items: center;
   flex-direction: column;
   top: 0px;
-  
 }
 
 .featured .text h1,
@@ -151,7 +149,6 @@ ul a:hover {
   font-size: 1.15rem;
   flex-wrap: wrap;
   line-height: 1.6;
-  
 }
 
 .featured .text li  {
@@ -165,12 +162,10 @@ ul a:hover {
 .featured .text ul a {
   color: rgb(41, 151, 255);
   cursor: pointer;
-  
 }
 
 .featured .text ul a:hover {
   text-decoration: underline;
-
 }
 
 /* PRODUCT GRID STYLES */
@@ -213,17 +208,13 @@ ul a:hover {
   cursor: pointer;
 }
 
-
-
 .product-grid .text ul a:hover {
   text-decoration: underline;
-
 }
 
 .product-grid .text ul :first-child {
   margin-right: 10px;
 }
-
 
 #ipaid {
   background-color: black;
@@ -254,7 +245,6 @@ ul a:hover {
   background-repeat: no-repeat;
   z-index: 2;
   filter: drop-shadow(grey 0.5rem 0.5rem 10px);
-  
 }
 
 #iphony {
@@ -325,7 +315,6 @@ ul a:hover {
   border: 1.5px solid rgba(240, 240, 240, 0.8);
 }
 
-
 @media (max-width: 800px) {
   .product-grid {
     grid-template: repeat(4, 1fr) / 1fr;
@@ -339,7 +328,6 @@ ul a:hover {
   #ipaid {
     grid-row: 2 / span 1;
   }
-  
 }
 
 /* FOOTER STYLES */
@@ -350,7 +338,6 @@ footer {
   padding: auto;
   display: flex;
   position: relative;
-
   font-size: 0.75rem;
   background-color: rgba(0, 0, 0, 0.1);
   justify-content: center;
